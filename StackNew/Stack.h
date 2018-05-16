@@ -18,7 +18,7 @@ public:
 	//конструктор по умочанию
 	Stack();
 	//parameter constructor
-	Stack(type* mass);
+	Stack(type* mass, int n);
 	//copy constructor
 	Stack(const Stack& obj);
 

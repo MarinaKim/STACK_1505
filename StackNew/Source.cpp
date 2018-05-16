@@ -28,6 +28,16 @@ int main() {
 			s.pop();
 		}
 	}break;
+	case 3: {
+		int a[5] = { 2,4,6,7,8 };
+		Stack <int> s(a, 3);
+		s.push(3);
+		s.push(5);
+		while (!s.empty()) {
+			cout << s.top() << endl;
+			s.pop();
+		}
+	}break;
 	}
 	system("pause");
 	return 0;

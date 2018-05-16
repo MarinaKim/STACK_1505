@@ -6,17 +6,17 @@ Stack<type>::Stack() {
 	els = nullptr;
 }
 template <typename type>
-Stack<type>::Stack(type* mass) {
-	this->length = sizeof(mass) / sizeof(type);
+Stack<type>::Stack(type* mass, int n) {
+	this->length = n;
 	els = new type[this->length];
 	this->buf_size = this->length;
 	for (int i = 0; i < length; i++)
-		this->els[i] = mass[i;]
+		this->els[i] = mass[i];
 }
 
 template<typename type>
-Stack<type>::Stack(const Stack& obj, int n) {
-	this->length = n;
+Stack<type>::Stack(const Stack& obj) {
+	this->length = obj.length;
 	this->buf_size = obj.buf_size;
 	this->els = new type[length];
 	for (int i = 0; i < length; i++)
